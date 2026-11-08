@@ -4,39 +4,39 @@
    ========================================================= */
 
 :root {
-  /* ---------- Brand ramp ---------- */
-  --brand-25:  #fcfbf7;
-  --brand-50:  #fbf8ef;
-  --brand-100: #f6efdf;
-  --brand-200: #ede0bf;
-  --brand-300: #e4d09e;
-  --brand-400: #dbc17e;
-  --brand-500: #d2b15e;   /* default */
-  --brand-600: #ae9451;
-  --brand-700: #8a7644;
-  --brand-800: #665938;
-  --brand-900: #423b2b;
-  --brand-950: #302d24;
-  --brand-975: #262521;
+  /* ---------- Brand gold ---------- */
+  --gold-25:  #fcfbf7;
+  --gold-50:  #fbf8ef;
+  --gold-100: #f6efdf;
+  --gold-200: #ede0bf;
+  --gold-300: #e4d09e;
+  --gold-400: #dbc17e;
+  --gold-500: #d2b15e;   /* default */
+  --gold-600: #ae9451;
+  --gold-700: #8a7644;
+  --gold-800: #665938;
+  --gold-900: #423b2b;
+  --gold-950: #302d24;
+  --gold-975: #262521;
 
-  /* ---------- Neutral ramp ---------- */
-  --neutral-25:  #f3f3f3;
-  --neutral-50:  #e8e8e8;
-  --neutral-100: #d0d0d0;
-  --neutral-200: #a0a0a0;
-  --neutral-300: #717171;
-  --neutral-400: #414141;
-  --neutral-500: #121212;   /* default */
-  --neutral-600: #141414;
-  --neutral-700: #171717;
-  --neutral-800: #191919;
-  --neutral-900: #1c1c1c;
+  /* ---------- Brand dark ---------- */
+  --dark-25:  #f3f3f3;
+  --dark-50:  #e8e8e8;
+  --dark-100: #d0d0d0;
+  --dark-200: #a0a0a0;
+  --dark-300: #717171;
+  --dark-400: #414141;
+  --dark-500: #121212;   /* default */
+  --dark-600: #141414;
+  --dark-700: #171717;
+  --dark-800: #191919;
+  --dark-900: #1c1c1c;
 
   --overlay-dark: #0c0c0c;
 
   /* ---------- Page ---------- */
-  --page-bg: var(--neutral-800);
-  --focus:   var(--brand-400);
+  --page-bg: var(--dark-800);
+  --focus:   var(--gold-400);
 
   /* ---------- Overlays ---------- */
   --overlay-rgb:    12 12 12;
@@ -46,66 +46,66 @@
   --overlay-none:   rgb(var(--overlay-rgb) / 0);
 
   /* ---------- Nav ---------- */
-  --nav-link:  var(--brand-100);
+  --nav-link:  var(--gold-100);
   --nav-scrim: var(--overlay-dark);
 
   /* ---------- Hero ---------- */
-  --hero-heading: var(--brand-500);
-  --hero-text:    var(--brand-100);
+  --hero-heading: var(--gold-500);
+  --hero-text:    var(--gold-100);
 
   /* ---------- Story ---------- */
   --story-bg:      var(--overlay-dark);
-  --story-surface: var(--brand-950);
-  --story-heading: var(--brand-500);
-  --story-text:    var(--brand-100);
+  --story-surface: var(--gold-950);
+  --story-heading: var(--gold-500);
+  --story-text:    var(--gold-100);
 
   /* ---------- Awards ---------- */
-  --awards-bg:           var(--brand-975);
-  --awards-eyebrow:      var(--brand-500);
-  --awards-heading:      var(--brand-100);
-  --awards-score:        var(--brand-500);
-  --awards-score-scale:  var(--brand-200);
-  --awards-wine-name:    var(--brand-25);
-  --awards-text:         var(--neutral-100);
-  --awards-badge-text:   var(--brand-500);
-  --awards-badge-border: var(--brand-500);
-  --awards-link:         var(--brand-50);
-  --awards-underline:    var(--brand-500);
-  --awards-divider:      var(--neutral-200);
+  --awards-bg:           var(--gold-975);
+  --awards-eyebrow:      var(--gold-500);
+  --awards-heading:      var(--gold-100);
+  --awards-score:        var(--gold-500);
+  --awards-score-scale:  var(--gold-200);
+  --awards-wine-name:    var(--gold-25);
+  --awards-text:         var(--dark-100);
+  --awards-badge-text:   var(--gold-500);
+  --awards-badge-border: var(--gold-500);
+  --awards-link:         var(--gold-50);
+  --awards-underline:    var(--gold-500);
+  --awards-divider:      var(--dark-200);
 
   /* ---------- Products ---------- */
-  --products-bg:      var(--neutral-800);
-  --products-heading: var(--brand-500);
-  --products-divider: var(--brand-400);
+  --products-bg:      var(--dark-800);
+  --products-heading: var(--gold-500);
+  --products-divider: var(--gold-400);
 
-  --card-bg:     var(--brand-25);
-  --card-title:  var(--brand-700);
+  --card-bg:     var(--gold-25);
+  --card-title:  var(--gold-700);
   --card-grape:  #000000;   /* not on a ramp — see notes */
   --card-meta:   #000000;   /* not on a ramp — see notes */
   --card-text:   #000000;   /* not on a ramp — see notes */
   --card-shadow: 4px 4px 2px rgb(0 0 0 / 0.25);
 
   /* ---------- CTA ---------- */
-  --cta-bg:            var(--neutral-800);
-  --cta-surface:       var(--neutral-25);
-  --cta-eyebrow:       var(--brand-600);   /* contrast — see notes */
-  --cta-heading:       var(--brand-900);
-  --cta-text:          var(--brand-900);
-  --cta-button-bg:     var(--brand-950);
-  --cta-button-text:   var(--brand-500);
-  --cta-button-border: var(--brand-400);
+  --cta-bg:            var(--dark-800);
+  --cta-surface:       var(--dark-25);
+  --cta-eyebrow:       var(--gold-600);   /* contrast — see notes */
+  --cta-heading:       var(--gold-900);
+  --cta-text:          var(--gold-900);
+  --cta-button-bg:     var(--gold-950);
+  --cta-button-text:   var(--gold-500);
+  --cta-button-border: var(--gold-400);
 
   /* ---------- Footer ---------- */
-  --footer-bg:   var(--neutral-500);
-  --footer-link: var(--brand-200);
+  --footer-bg:   var(--dark-500);
+  --footer-link: var(--gold-200);
 
   /* ---------- Fonts ---------- */
   --font-heading: "EB Garamond", Georgia, serif;
   --font-body: "Inter", system-ui, sans-serif;
 
-  --weight-regular: 400;
-  --weight-medium: 500;
-  --weight-semibold: 600;
+  --weight-sm: 400;
+  --weight-md: 500;
+  --weight-lg: 600;
 
   /* ---------- Font sizes (mobile → desktop) ---------- */
   --text-h1: clamp(2.5rem,   1.664rem + 3.43vw, 4.75rem);   /* 40 → 76 */
