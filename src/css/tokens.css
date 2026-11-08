@@ -1,0 +1,185 @@
+/* =========================================================
+   LA PICCOLA CANTINA — DESIGN TOKENS
+   Load before all other stylesheets.
+   ========================================================= */
+
+:root {
+  /* ---------- Brand ramp ---------- */
+  --brand-25:  #fcfbf7;
+  --brand-50:  #fbf8ef;
+  --brand-100: #f6efdf;
+  --brand-200: #ede0bf;
+  --brand-300: #e4d09e;
+  --brand-400: #dbc17e;
+  --brand-500: #d2b15e;   /* default */
+  --brand-600: #ae9451;
+  --brand-700: #8a7644;
+  --brand-800: #665938;
+  --brand-900: #423b2b;
+  --brand-950: #302d24;
+  --brand-975: #262521;
+
+  /* ---------- Neutral ramp ---------- */
+  --neutral-25:  #f3f3f3;
+  --neutral-50:  #e8e8e8;
+  --neutral-100: #d0d0d0;
+  --neutral-200: #a0a0a0;
+  --neutral-300: #717171;
+  --neutral-400: #414141;
+  --neutral-500: #121212;   /* default */
+  --neutral-600: #141414;
+  --neutral-700: #171717;
+  --neutral-800: #191919;
+  --neutral-900: #1c1c1c;
+
+  --overlay-dark: #0c0c0c;
+
+  /* ---------- Page ---------- */
+  --page-bg: var(--neutral-800);
+  --focus:   var(--brand-400);
+
+  /* ---------- Overlays ---------- */
+  --overlay-rgb:    12 12 12;
+  --overlay-strong: rgb(var(--overlay-rgb) / 0.9);
+  --overlay-mid:    rgb(var(--overlay-rgb) / 0.45);
+  --overlay-soft:   rgb(var(--overlay-rgb) / 0.22);
+  --overlay-none:   rgb(var(--overlay-rgb) / 0);
+
+  /* ---------- Nav ---------- */
+  --nav-link:  var(--brand-100);
+  --nav-scrim: var(--overlay-dark);
+
+  /* ---------- Hero ---------- */
+  --hero-heading: var(--brand-500);
+  --hero-text:    var(--brand-100);
+
+  /* ---------- Story ---------- */
+  --story-bg:      var(--overlay-dark);
+  --story-surface: var(--brand-950);
+  --story-heading: var(--brand-500);
+  --story-text:    var(--brand-100);
+
+  /* ---------- Awards ---------- */
+  --awards-bg:           var(--brand-975);
+  --awards-eyebrow:      var(--brand-500);
+  --awards-heading:      var(--brand-100);
+  --awards-score:        var(--brand-500);
+  --awards-score-scale:  var(--brand-200);
+  --awards-wine-name:    var(--brand-25);
+  --awards-text:         var(--neutral-100);
+  --awards-badge-text:   var(--brand-500);
+  --awards-badge-border: var(--brand-500);
+  --awards-link:         var(--brand-50);
+  --awards-underline:    var(--brand-500);
+  --awards-divider:      var(--neutral-200);
+
+  /* ---------- Products ---------- */
+  --products-bg:      var(--neutral-800);
+  --products-heading: var(--brand-500);
+  --products-divider: var(--brand-400);
+
+  --card-bg:     var(--brand-25);
+  --card-title:  var(--brand-700);
+  --card-grape:  #000000;   /* not on a ramp — see notes */
+  --card-meta:   #000000;   /* not on a ramp — see notes */
+  --card-text:   #000000;   /* not on a ramp — see notes */
+  --card-shadow: 4px 4px 2px rgb(0 0 0 / 0.25);
+
+  /* ---------- CTA ---------- */
+  --cta-bg:            var(--neutral-800);
+  --cta-surface:       var(--neutral-25);
+  --cta-eyebrow:       var(--brand-600);   /* contrast — see notes */
+  --cta-heading:       var(--brand-900);
+  --cta-text:          var(--brand-900);
+  --cta-button-bg:     var(--brand-950);
+  --cta-button-text:   var(--brand-500);
+  --cta-button-border: var(--brand-400);
+
+  /* ---------- Footer ---------- */
+  --footer-bg:   var(--neutral-500);
+  --footer-link: var(--brand-200);
+
+  /* ---------- Fonts ---------- */
+  --font-heading: "EB Garamond", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* ---------- Font sizes (mobile → desktop) ---------- */
+  --text-h1: clamp(2.5rem,   1.664rem + 3.43vw, 4.75rem);   /* 40 → 76 */
+  --text-h2: clamp(2.125rem, 1.475rem + 2.67vw, 3.875rem);  /* 34 → 62 */
+  --text-h3: clamp(1.75rem,  1.286rem + 1.90vw, 3rem);      /* 28 → 48 */
+  --text-h4: clamp(1.625rem, 1.300rem + 1.33vw, 2.5rem);    /* 26 → 40 */
+  --text-h5: clamp(1.5rem,   1.314rem + 0.76vw, 2rem);      /* 24 → 32 */
+  --text-h6: clamp(1.25rem,  1.157rem + 0.38vw, 1.5rem);    /* 20 → 24 */
+
+  --text-label: 1.25rem;    /* 20 */
+  --text-body:  1rem;       /* 16 */
+  --text-small: 0.75rem;    /* 12 */
+
+  /* ---------- Line heights ---------- */
+  --leading-h1: 1.21;
+  --leading-h2: 1.19;
+  --leading-h3: 1.17;
+  --leading-h4: 1.2;
+  --leading-h5: 1.25;
+  --leading-h6: 1.17;
+  --leading-label: 1.2;
+  --leading-body: 1.6;
+  --leading-small: 1.5;
+
+  /* ---------- Letter spacing ---------- */
+  --tracking-h1: -0.02em;
+  --tracking-h3: 0.03em;
+  --tracking-h5: 0.04em;
+  --tracking-label: 0.1em;
+  --tracking-caption: 0.08em;
+
+  /* ---------- Spacing ---------- */
+  --space-1:  0.25rem;   /*   4 */
+  --space-2:  0.5rem;    /*   8 */
+  --space-3:  0.75rem;   /*  12 */
+  --space-4:  1rem;      /*  16 */
+  --space-5:  1.5rem;    /*  24 */
+  --space-6:  2rem;      /*  32 */
+  --space-7:  2.5rem;    /*  40 */
+  --space-8:  3rem;      /*  48 */
+  --space-9:  4rem;      /*  64 */
+  --space-10: 5rem;      /*  80 */
+  --space-11: 6rem;      /*  96 */
+  --space-12: 8rem;      /* 128 */
+  --space-13: 12rem;     /* 192 */
+
+  --space-section: clamp(4rem, 1.03rem + 12.19vw, 12rem);   /* 64 → 192 */
+
+  /* ---------- Layout ---------- */
+  --content-max: 75rem;                                /* 1200 */
+  --content-narrow: 45rem;                             /*  720 */
+  --gutter: clamp(1.25rem, 0.75rem + 2.05vw, 3rem);    /*  20 → 48 */
+
+  /* ---------- Radius & border ---------- */
+  --radius-sm: 0.25rem;   /*  4 */
+  --radius-md: 0.5rem;    /*  8 */
+  --radius-lg: 1rem;      /* 16 */
+  --radius-full: 9999px;
+
+  --border-thin: 1px;
+  --border-md: 2px;
+
+  /* ---------- Stacking order ---------- */
+  --z-base: 1;
+  --z-nav: 100;
+  --z-overlay: 200;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 48rem) {
+  :root {
+    --tracking-label: 0.05em;   /* Mobile/Paragraph large */
+  }
+}
